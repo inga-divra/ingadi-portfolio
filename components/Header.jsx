@@ -7,8 +7,8 @@ import Nav from "./Nav"
 
 const Header = () => {
     return (
-        <header className='py-8 xl:py-12  border-4 border-red-500'>
-            <div className='container mx-auto flex justify-between items-center border-4 border-blue-500'>
+        <header className='py-8 xl:py-12  '>
+            <div className='container mx-auto flex justify-between items-center '>
                 {/* logo */}
                 <Link href='/'>
                     <h1 className='text-4xl font-semibold'>IngaDI<span className='text-accent'>.</span></h1>

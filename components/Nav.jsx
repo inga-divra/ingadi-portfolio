@@ -27,9 +27,19 @@ const links = [
 ]
 
 const Nav = () => {
+    const pathname = usePathname();
+
     return (
-        <nav>
-            Desktop nav
+        <nav className='flex gap-8'>
+            {links.map((link, index) => {
+                return <Link
+                    className={`${link.path === pathname && "text-accent border-b-2 border-accent"
+                        } capitalize font-medium hover:text-accent transition-all`}
+                    href={link.path}
+                    key={index}>
+                    {link.name}
+                </Link>
+            })}
         </nav>
     )
 }
