@@ -20,10 +20,10 @@
   }
 
   .text-outline {
-    -webkit-text-stroke: 1px #ffffff;
+    -webkit-text-stroke: 1px #E7DAF5;
   }
 
   .text-outline-hover {
-    -webkit-text-stroke: 1px #00ff99;
+    -webkit-text-stroke: 1px #5C03B9;
   }
 }
