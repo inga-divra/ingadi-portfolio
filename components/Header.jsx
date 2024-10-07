@@ -20,7 +20,7 @@ const Header = () => {
                     <Link href='/contact'>
                         <Button>
                             Hire me
-                        </Button>
+                        </Button >
                     </Link>
                 </div>
                 {/* mobile nav */}
