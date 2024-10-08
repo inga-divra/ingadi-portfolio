@@ -12,7 +12,7 @@ const Home = () => {
       <div className='container mx-auto h-full'>
         <div className='flex flex-col xl:flex-row items-center xl:justify-between xl:gap-12 xl:pt-8 xl:pb-24'>
           {/* HERO INFO */}
-          <div className='text-center xl:text-left flex-1'>
+          <div className='text-center xl:text-left flex-1 order-2 xl:order-none'>
             <span className='capitalize text-xl'>software developer</span>
             <h1 className='h1 mb-6'>
               Hello I&apos;m <br /> <span className='capitalize text-accent'>inga divra</span>
@@ -44,7 +44,7 @@ const Home = () => {
             </div>
           </div>
           {/* HERO IMG */}
-          <div className='flex-1 flex justify-center'>
+          <div className='flex-1 flex justify-center order-1 xl:order-none mb-8 xl:mb-0'>
             <Photo />
           </div>
         </div>
