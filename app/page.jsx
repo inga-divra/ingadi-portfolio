@@ -9,7 +9,7 @@ import Stats from "@/components/Stats";
 
 const Home = () => {
   return (
-    <section className='h-full'>
+    <section className='h-full mb-12'>
       <div className='container mx-auto h-full'>
         <div className='flex flex-col xl:flex-row items-center xl:justify-between xl:gap-12 xl:pt-8 xl:pb-24'>
           {/* HERO INFO */}
