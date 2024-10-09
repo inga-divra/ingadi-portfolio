@@ -23,7 +23,7 @@ const Photo = () => {
                     className='w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten'
                 >
                     <Image
-                        src='/assets/hero5.svg'
+                        src='/assets/hero.svg'
                         priority
                         fill
                         quality={100}

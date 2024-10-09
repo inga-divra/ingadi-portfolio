@@ -11,7 +11,7 @@ import {
 
 import { SiTailwindcss, SiNextdotjs } from 'react-icons/si';
 
-// about data
+// about me data
 export const about = {
     title: 'About Me',
     description:
@@ -44,6 +44,66 @@ export const about = {
     ],
 };
 
+// experience data
+const experience = {
+    icon: "/assets/resume/badge.svg",
+    title: "My Experience",
+    description:
+        "I have experience in building and customizing WordPress websites for small businesses and providing responsive web solutions.",
+    items: [
+        {
+            company: "Pyrymedia Oy",
+            role: "Freelance WordPress Developer",
+            duration: "2024 - Present",
+        },
+        {
+            company: "Massage Therapist (Hierontaja)",
+            role: "Freelance WordPress Developer",
+            duration: "2024 - Present",
+        },
+        {
+            company: "Klever Art",
+            role: "Freelance WordPress Developer",
+            duration: "2018 - Present",
+        },
+        {
+            company: "Personal Portfolio",
+            role: "React & Next.js Developer",
+            duration: "2023 - 2024",
+        },
+    ],
+};
+
+
+// education data
+const education = {
+    icon: "/assets/resume/cap.svg",
+    title: "My Education",
+    description:
+        "I have a diverse background in media, design, and IT, which has helped me transition into web development.",
+    items: [
+        {
+            institution: "University of Helsinki (Open University)",
+            degree: "Computer Science (Tietojenkäsittelytiede)",
+            duration: "2023 - Present",
+        },
+        {
+            institution: "Omnia Vocational School",
+            degree: "Media and Visual Expression",
+            duration: "2020 - 2023",
+        },
+        {
+            institution: "Tallinn University",
+            degree: "Bachelor's Degree in Advertising and Image",
+            duration: "2004 - 2008",
+        },
+        {
+            institution: "Various Online Courses (Fullstack Open, Next.js, React)",
+            degree: "Web Development Courses",
+            duration: "2022 - Present",
+        },
+    ],
+};
 
 
 const Resume = () => {
