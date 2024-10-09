@@ -150,9 +150,28 @@ const skills = {
 
 const Resume = () => {
     return (
-        <div>
-            Resume page
-        </div>
+        <motion.div
+            className='min-h-[80vh] flex items-center justify-center py-12 xl:py-0'
+            initial={{ opacity: 0 }}
+            animate={{
+                opacity: 1,
+                transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
+            }}
+
+        >
+            <div className='container mx-auto'>
+                <Tabs
+                    defaultValue='experience'
+                    className='flex flex-col xl:flex-row gap-[60px]'>
+                    <TabsList>
+                        <TabsTrigger value="experience">Experience</TabsTrigger>
+                        <TabsTrigger value="education">Education</TabsTrigger>
+                        <TabsTrigger value="skills">Skills</TabsTrigger>
+                        <TabsTrigger value="about">About me</TabsTrigger>
+                    </TabsList>
+                </Tabs>
+            </div>
+        </motion.div>
     );
 };
 
