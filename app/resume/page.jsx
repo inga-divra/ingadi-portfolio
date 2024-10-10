@@ -38,7 +38,7 @@ export const about = {
         },
         {
             fieldName: 'Languages',
-            fieldValue: 'English, Finnish, Russian, Estonian',
+            fieldValue: 'Eng, Fin, Rus, Est',
         },
     ],
 };
