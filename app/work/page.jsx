@@ -12,6 +12,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip'
+import WorkSliderBtns from '@/components/WorkSliderBtns'
 
 
 const projects = [
@@ -34,15 +35,16 @@ const projects = [
     },
     {
         num: '02',
-        category: 'fullstack',
+        category: 'frontend',
         title: 'Personal Portfolio',
         description:
-            'Built using React and Next.js, this is my personal portfolio showcasing my skills, projects, and resume in a dynamic way.',
+            'An engaging and interactive personal portfolio developed with React and Next.js, highlighting my skills, projects, and resume in a modern and dynamic format.',
         stack: [{ name: 'React.js' }, { name: 'Next.js' }, { name: 'Tailwind CSS' }],
         image: '/assets/work/thumb2.png',
         live: 'https://ingadi-portfolio.vercel.app/',
         github: 'https://github.com/inga-divra/ingadi-portfolio',
     },
+
     {
         num: '03',
         category: 'frontend',
@@ -79,8 +81,15 @@ const projects = [
     },
 ];
 
+
 const Work = () => {
     const [project, setProject] = useState(projects[0])
+
+    const handleSlideChange = (swiper) => {
+        const currentIndex = swiper.activeIndex;
+        setProject(projects[currentIndex]);
+    };
+
     return (
         <motion.div
             className='min-h-[80vh] flex flex-col justify-center py-12 xl:px-0'
@@ -92,7 +101,7 @@ const Work = () => {
             <div className='container mx-auto'>
                 <div className='flex flex-col xl:flex-row xl:gap-[30px]'>
                     {/* PROJECT INFO */}
-                    <div className='w-full xl:w-[50%] xl:min-h-[460px] flex-grow flex flex-col xl:justify-between'>
+                    <div className='w-full xl:w-[50%] xl:min-h-[460px] flex-grow flex flex-col xl:justify-between order-2 xl:order-1'>
                         <div className='flex flex-col gap-[30px] h-[50%]'>
                             {/* outline num */}
                             <div className='text-8xl leading-none font-extrabold text-transparent text-outline'>
@@ -153,10 +162,41 @@ const Work = () => {
                         </div>
                     </div>
                     {/* SLIDER */}
-                    <div className='w-full xl:w-[50%]'>slider</div>
+                    <div className='w-full xl:w-[50%] order-1 xl:order-2'>
+                        <Swiper
+                            className='xl:h-[520px] mb-12'
+                            spaceBetween={30}
+                            slidesPerView={1}
+                            onSlideChange={handleSlideChange}
+                        >
+                            {projects.map((project, index) => {
+                                return <SwiperSlide key={index} className="w-full">
+                                    <div className='h-[460px]  relative group flex justify-center items-center bg-pink-50/20'>
+                                        {/* overlay */}
+                                        <div className='absolute top-0 bottom-0 w-full h-full bg-primary/25 z-10'></div>
+                                        {/* image */}
+                                        <div className='relative w-full h-full'>
+                                            <Image
+                                                src={project.image}
+                                                fill
+                                                className='object-cover'
+                                                alt={project.title}
+                                                sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
+                                            />
+                                        </div>
+                                    </div>
+                                </SwiperSlide>
+                            })}
+                            {/* Slider btns */}
+                            <WorkSliderBtns
+                                containerStyles='flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none'
+                                btnStyles='bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all'
+                            />
+                        </Swiper>
+                    </div>
                 </div>
             </div>
-        </motion.div>
+        </motion.div >
     )
 }
 
