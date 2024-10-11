@@ -42,7 +42,7 @@ const Contact = () => {
                             className='flex flex-col gap-6 p-10 bg-[#2A2A33] rounded-xl'>
                             <h3 className='text-4xl text-accent'>Let's work together</h3>
                             <p className='text-white/80'>
-                                I'm excited to collaborate with you on your next project. Fill out the form below, and let's start building something amazing together.
+                                I&apos;m excited to collaborate with you on your next project. Fill out the form below, and let&apos;s start building something amazing together.
                             </p>
                             {/* input fields */}
                             <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
