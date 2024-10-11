@@ -7,15 +7,7 @@ import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import {
-    Select,
-    SelectContent,
-    SelectGroup,
-    SelectItem,
-    SelectLabel,
-    SelectTrigger,
-    SelectValue,
-} from '@/components/ui/select';
+
 
 const info = [
     {
@@ -59,6 +51,15 @@ const Contact = () => {
                                 <Input type='email' placeholder='Email Address' required />
                                 <Input type='tel' placeholder='Phone Number' required />
                             </div>
+                            {/* textarea */}
+                            <Textarea
+                                className='h-[200px]'
+                                placeholder='Type your message here'
+                            />
+                            {/* btn */}
+                            <Button size='md' className='max-w-40'>
+                                Send message
+                            </Button>
                         </form>
                     </div>
                     {/* info */}
