@@ -1,5 +1,7 @@
 # IngaDI Portfolio
 
+[Visit the Live Site](https://ingadi-portfolio.vercel.app/)
+
 ## Overview
 
 IngaDI Portfolio is a personal portfolio website built with **Next.js**, designed to showcase projects, skills, and professional experience. The website features a modern UI with sections for services, resume, work, and contact.
