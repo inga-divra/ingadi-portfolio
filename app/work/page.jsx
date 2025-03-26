@@ -30,7 +30,7 @@ const projects = [
             { name: 'Database' }
         ],
         image: '/assets/work/thumb1.png',
-        live: '#',
+        live: 'https://nextjs-store-project-one.vercel.app/',
         github: 'https://github.com/inga-divra/nextjs-store-project',
     },
     {
@@ -181,6 +181,7 @@ const Work = () => {
                                                 fill
                                                 className='object-cover'
                                                 alt={project.title}
+                                                quality={100}
                                                 sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
                                             />
                                         </div>
