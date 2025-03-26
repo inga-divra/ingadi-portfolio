@@ -51,12 +51,12 @@ const experience = {
         'I have experience in building and customizing WordPress websites for small businesses and providing responsive web solutions.',
     items: [
         {
-            company: 'Pyrymedia Oy',
+            company: 'Oh My Cut Productions Oy',
             role: 'Freelance WordPress Developer',
-            duration: '2024',
+            duration: '2025',
         },
         {
-            company: 'Massage Therapist',
+            company: 'Hemmotteluhuone Kuopio',
             role: 'Freelance WordPress Developer',
             duration: '2024',
         },
@@ -88,7 +88,7 @@ const education = {
         {
             institution: 'Omnia Vocational College',
             degree: 'Media and Visual Expression',
-            duration: '2020 - 2023',
+            duration: '2020 - 2024',
         },
         {
             institution: 'Tallinn University',
