@@ -1,27 +1,24 @@
 import { NextResponse } from 'next/server';
-import nodemailer from 'nodemailer';
+import sendEmail from '../../../lib/sendEmail';
 
 export async function POST(req) {
   try {
+    // Parse request body
     const { firstName, lastName, email, phone, message } = await req.json();
 
-    // Creating a transporter using environment variables
-    const transporter = nodemailer.createTransport({
-      service: 'gmail',
-      auth: {
-        user: process.env.EMAIL_USER, // Use environment variables
-        pass: process.env.EMAIL_PASS, // Store password securely
-      },
-    });
+    // Construct email subject and message
+    const subject = `New Contact Message from ${firstName} ${lastName}`;
+    const text = `
+      Name: ${firstName} ${lastName}
+      Email: ${email}
+      Phone: ${phone}
 
-    const mailOptions = {
-      from: email,
-      to: process.env.EMAIL_RECEIVER, // Use env for the receiver
-      subject: `New Contact Message from ${firstName} ${lastName}`,
-      text: `Name: ${firstName} ${lastName}\nEmail: ${email}\nPhone: ${phone}\n\nMessage:\n${message}`,
-    };
+      Message:
+      ${message}
+    `;
 
-    await transporter.sendMail(mailOptions);
+    // Send email using the sendEmail function
+    await sendEmail(process.env.EMAIL_RECEIVER, subject, text);
 
     return NextResponse.json({
       success: true,
