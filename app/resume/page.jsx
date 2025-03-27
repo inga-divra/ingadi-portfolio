@@ -14,7 +14,7 @@ import { ScrollArea } from '@/components/ui/scroll-area';
 export const about = {
     title: 'About Me',
     description:
-        'I am a passionate developer focused on building responsive, dynamic web applications using modern JavaScript frameworks and technologies.',
+        'I am a passionate developer focused on building responsive, dynamic web applications using modern JavaScript frameworks and technologies. My expertise includes WordPress development for small businesses and custom-built React applications. I have experience developing websites for various industries, including media production, wellness services, and e-commerce. My tech stack includes Next.js, React, TypeScript, and Tailwind CSS, which I use to create fast, user-friendly, and visually appealing web solutions.',
     info: [
         {
             fieldName: 'Name',
@@ -48,7 +48,7 @@ const experience = {
     icon: '/assets/resume/badge.svg',
     title: 'My Experience',
     description:
-        'I have experience in building and customizing WordPress websites for small businesses and providing responsive web solutions.',
+        'I have experience in developing and customizing WordPress websites for small businesses, creating responsive and user-friendly web solutions, and building modern applications using React and Next.js.',
     items: [
         {
             company: 'Oh My Cut Productions Oy',

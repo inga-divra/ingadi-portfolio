@@ -48,36 +48,36 @@ const projects = [
     {
         num: '03',
         category: 'frontend',
-        title: 'Pyrymedia Oy',
+        title: 'Oh My Cut Productions',
         description:
-            'A website for a media production company in Helsinki, built using WordPress and designed to showcase their services.',
+            'A modern, responsive website for a media production company based in Helsinki, built with WordPress. The site is designed to showcase the company’s services with a clean, user-friendly layout, optimized for both desktop and mobile devices, offering an engaging and visually appealing experience to potential clients.',
         stack: [{ name: 'WordPress' }, { name: 'CSS' }, { name: 'Elementor' }],
         image: '/assets/work/thumb3.png',
-        live: 'https://pyrymedia.fi',
-        github: '',
+        live: 'https://ohmycut.fi',
+        github: 'https://github.com/inga-divra',
     },
     {
         num: '04',
         category: 'frontend',
-        title: 'Klever Art Website',
+        title: 'Hemmotteluhuone Kuopio',
         description:
-            'A custom WordPress site for Klever Art, featuring a responsive design and gallery showcasing botanical bas-relief art.',
+            'A custom WordPress website developed for a massage therapist in Kuopio, Finland. The site provides detailed information about the therapist’s services, as well as an intuitive booking system for clients to easily schedule appointments. Designed to be responsive and user-friendly, it offers a seamless experience for users across all devices.',
         stack: [{ name: 'WordPress' }, { name: 'Elementor' }, { name: 'CSS' }],
-        image: '/assets/work/thumb1.png',
-        live: 'https://klever-art.com',
-        github: '',
+        image: '/assets/work/thumb4.png',
+        live: 'https://hemmotteluhuone.fi/',
+        github: 'https://github.com/inga-divra',
     },
 
     {
         num: '05',
         category: 'frontend',
-        title: 'Massage Therapist Website',
+        title: 'Klever Art',
         description:
-            'A custom WordPress site built for a massage therapist, providing information about services and booking options.',
+            "A custom WordPress site created for a botanical bas-relief artist. The website showcases the artist's portfolio, provides information about the artwork, and offers contact details for potential commissions. Designed with a clean, artistic layout, the site is responsive and optimized for both desktop and mobile users.",
         stack: [{ name: 'WordPress' }, { name: 'CSS' }, { name: 'HTML' }],
-        image: '/assets/work/thumb2.png',
-        live: 'https://hemmotteluhuone.fi',
-        github: '',
+        image: '/assets/work/thumb5.png',
+        live: 'https://klever-art.com',
+        github: 'https://github.com/inga-divra',
     },
 ];
 
@@ -107,10 +107,10 @@ const Work = () => {
                             <div className='text-8xl leading-none font-extrabold text-transparent text-outline'>
                                 {project.num}
                             </div>
-                            {/* project category */}
+                            {/* project name */}
                             <h2 className='text-[42px] font-bold leading-none group-hover:text-accent 
                         transition-all duration-500 capitalize'>
-                                {project.category} project
+                                {project.title}
                             </h2>
                             {/* project description */}
                             <p className='text-white/80'>
