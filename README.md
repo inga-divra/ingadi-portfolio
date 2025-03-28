@@ -1,6 +1,6 @@
 # IngaDI Portfolio
 
-[Visit the Live Site](https://ingadi-portfolio.vercel.app/)
+[Visit the Live Site](https://www.ingadivra.com/)
 
 ## Overview
 
@@ -43,41 +43,7 @@ The portfolio includes a fully functional contact form that sends messages direc
 
 ## Live Demo
 
-[Visit the Live Site](https://ingadi-portfolio.vercel.app/)
-
-## Installation & Setup
-
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/inga-divra/portfolio.git
-   ```
-2. Navigate to the project directory:
-   ```sh
-   cd portfolio
-   ```
-3. Install dependencies:
-   ```sh
-   npm install
-   ```
-4. Set up environment variables for email configuration in a `.env.local` file:
-   ```sh
-   EMAIL_RECEIVER=your-email@example.com
-   EMAIL_USER=your-email@example.com
-   EMAIL_PASSWORD=your-email-password
-   ```
-5. Run the development server:
-   ```sh
-   npm run dev
-   ```
-6. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-## Deployment
-
-This project is deployed on Vercel. To deploy your own version:
-
-```sh
-vercel
-```
+[Visit the Live Site](https://www.ingadivra.com/)
 
 ## Contact
 
