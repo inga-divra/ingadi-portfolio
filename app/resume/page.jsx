@@ -82,8 +82,8 @@ const education = {
     items: [
         {
             institution: 'University of Helsinki',
-            degree: 'Computer Science/ Open University',
-            duration: '2023 - Present',
+            degree: 'Computer Science',
+            duration: '2025 - 2030',
         },
         {
             institution: 'Omnia Vocational College',
