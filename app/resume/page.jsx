@@ -17,8 +17,9 @@ import {
     SiPrisma,
     SiDocker,
     SiJest,
+    SiGutenberg,
 } from 'react-icons/si';
-import { TbBrandReactNative } from 'react-icons/tb';
+import { TbBrandReactNative, TbForms } from 'react-icons/tb';
 import { motion } from 'framer-motion';
 
 // Custom components
@@ -68,13 +69,8 @@ const experience = {
     icon: '/assets/resume/badge.svg',
     title: 'My Experience',
     description:
-        'I have built WordPress sites for real clients from the first conversation through to launch, published a free template on the Framer Marketplace, and I develop applications with React and Next.js. Everything I have built since 2022 is documented publicly on GitHub.',
+        'I have built WordPress sites for real clients from the first conversation through to launch, and I design and develop interfaces with React and Next.js. Everything I have built since 2022 is documented publicly on GitHub.',
     items: [
-        {
-            company: 'Framer Marketplace',
-            role: 'Nova AI — Published Framer Template',
-            duration: '2026',
-        },
         {
             company: 'Oh My Cut Productions Oy, Helsinki',
             role: 'Freelance Web Developer — WordPress',
@@ -158,6 +154,14 @@ const skills = {
         {
             icon: <SiWordpress />,
             name: 'WordPress',
+        },
+        {
+            icon: <SiGutenberg />,
+            name: 'Gutenberg',
+        },
+        {
+            icon: <TbForms />,
+            name: 'ACF',
         },
         {
             icon: <SiElementor />,
