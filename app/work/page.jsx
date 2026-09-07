@@ -18,66 +18,73 @@ import WorkSliderBtns from '@/components/WorkSliderBtns'
 const projects = [
     {
         num: '01',
-        category: 'fullstack',
-        title: 'E-Commerce App',
+        category: 'client work',
+        title: 'Oh My Cut Productions',
         description:
-            'A responsive e-commerce platform built with Next.js and TypeScript, offering a smooth shopping experience and dynamic product listings.',
+            'A full redesign and rebrand for a Helsinki media production company, replacing a generic one-page theme site with a structured multi-page site in WordPress and Elementor. The dark visual identity is my own design, carried across six service pages, three priced production tiers and a references section of fourteen television productions with showreels, testimonials and partner logos.',
         stack: [
-            { name: 'Next.js' },
-            { name: 'TypeScript' },
-            { name: 'Tailwind' },
-            { name: 'Prisma' },
-            { name: 'Database' }
+            { name: 'WordPress' },
+            { name: 'Elementor' },
+            { name: 'CSS' },
+            { name: 'UI Design' },
         ],
-        image: '/assets/work/thumb1.png',
-        live: 'https://nextjs-store-project-one.vercel.app/',
-        github: 'https://github.com/inga-divra/nextjs-store-project',
+        image: '/assets/work/ohmycut.png',
+        live: 'https://ohmycut.fi',
+        github: '',
     },
     {
         num: '02',
-        category: 'frontend',
-        title: 'Personal Portfolio',
+        category: 'client work',
+        title: 'Hemmotteluhuone Kuopio',
         description:
-            'An engaging and interactive personal portfolio developed with React and Next.js, highlighting my skills, projects, and resume in a modern and dynamic format.',
-        stack: [{ name: 'React.js' }, { name: 'Next.js' }, { name: 'Tailwind CSS' }],
-        image: '/assets/work/thumb2.png',
-        live: 'https://ingadi-portfolio.vercel.app/',
-        github: 'https://github.com/inga-divra/ingadi-portfolio',
+            'A WordPress site for a massage therapist in Kuopio, built in Elementor. It presents her treatments, pricing and background, and links through to the external booking service the client already used, so appointments stay in the tool she knows.',
+        stack: [{ name: 'WordPress' }, { name: 'Elementor' }, { name: 'CSS' }],
+        image: '/assets/work/hemmotteluhuone.png',
+        live: 'https://hemmotteluhuone.fi/',
+        github: '',
     },
-
     {
         num: '03',
-        category: 'frontend',
-        title: 'Oh My Cut Productions',
+        category: 'design',
+        title: 'Nova AI',
         description:
-            'A modern, responsive website for a media production company based in Helsinki, built with WordPress. The site is designed to showcase the company’s services with a clean, user-friendly layout, optimized for both desktop and mobile devices, offering an engaging and visually appealing experience to potential clients.',
-        stack: [{ name: 'WordPress' }, { name: 'CSS' }, { name: 'Elementor' }],
-        image: '/assets/work/thumb3.png',
-        live: 'https://ohmycut.fi',
-        github: 'https://github.com/inga-divra',
+            'A concept site for an AI consultancy, designed and built in React with hand-written CSS. The type scale is fluid rather than stepped, and the whole page runs on a single layer of design tokens, so colour, spacing and typography change from one place.',
+        stack: [
+            { name: 'React' },
+            { name: 'CSS' },
+            { name: 'Design System' },
+            { name: 'UI Design' },
+        ],
+        image: '/assets/work/nova-ai.png',
+        live: 'https://nova-ai-liart.vercel.app',
+        github: '',
     },
     {
         num: '04',
-        category: 'frontend',
-        title: 'Hemmotteluhuone Kuopio',
+        category: 'design',
+        title: 'RenovateUK',
         description:
-            'A custom WordPress website developed for a massage therapist in Kuopio, Finland. The site provides detailed information about the therapist’s services, as well as an intuitive booking system for clients to easily schedule appointments. Designed to be responsive and user-friendly, it offers a seamless experience for users across all devices.',
-        stack: [{ name: 'WordPress' }, { name: 'Elementor' }, { name: 'CSS' }],
-        image: '/assets/work/thumb4.png',
-        live: 'https://hemmotteluhuone.fi/',
-        github: 'https://github.com/inga-divra',
+            'A concept site for a small London renovation company, designed and built in React with hand-written CSS. The layout leads with a typographic promise and one large photograph, and puts rating, insurance and coverage area directly under the call to action, where a homeowner looks for them.',
+        stack: [
+            { name: 'React' },
+            { name: 'CSS' },
+            { name: 'UI Design' },
+        ],
+        image: '/assets/work/renovate-uk.png',
+        live: 'https://renovate-uk.vercel.app',
+        github: '',
     },
 
     {
         num: '05',
-        category: 'frontend',
+        category: 'client work',
         title: 'Klever Art',
         description:
             "A custom WordPress site created for a botanical bas-relief artist. The website showcases the artist's portfolio, provides information about the artwork, and offers contact details for potential commissions. Designed with a clean, artistic layout, the site is responsive and optimized for both desktop and mobile users.",
         stack: [{ name: 'WordPress' }, { name: 'CSS' }, { name: 'HTML' }],
         image: '/assets/work/thumb5.png',
         live: 'https://klever-art.com',
-        github: 'https://github.com/inga-divra',
+        github: '',
     },
 ];
 
@@ -92,7 +99,7 @@ const Work = () => {
 
     return (
         <motion.div
-            className='min-h-[80vh] flex flex-col justify-center py-12 xl:px-0'
+            className='min-h-[80vh] flex flex-col justify-start py-12 xl:px-0'
             initial={{ opacity: 0 }}
             animate={{
                 opacity: 1,
@@ -133,31 +140,35 @@ const Work = () => {
                             {/* buttons */}
                             <div className='flex items-center gap-4'>
                                 {/* Live project btn */}
-                                <Link href={project.live} target='_blank' rel='noopener noreferrer'  >
-                                    <TooltipProvider delayDuration={100}>
-                                        <Tooltip>
-                                            <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                                                <BsArrowUpRight className="text-3xl group-hover:text-accent" />
-                                            </TooltipTrigger>
-                                            <TooltipContent className='bg-[#E7DAF5] text-[#2A2A33] p-2 rounded-md shadow-md'>
-                                                <p>Live project</p>
-                                            </TooltipContent>
-                                        </Tooltip>
-                                    </TooltipProvider>
-                                </Link>
+                                {project.live && (
+                                    <Link href={project.live} target='_blank' rel='noopener noreferrer'  >
+                                        <TooltipProvider delayDuration={100}>
+                                            <Tooltip>
+                                                <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                                                    <BsArrowUpRight className="text-3xl group-hover:text-accent" />
+                                                </TooltipTrigger>
+                                                <TooltipContent className='bg-[#E7DAF5] text-[#2A2A33] p-2 rounded-md shadow-md'>
+                                                    <p>Live project</p>
+                                                </TooltipContent>
+                                            </Tooltip>
+                                        </TooltipProvider>
+                                    </Link>
+                                )}
                                 {/* Github project btn */}
-                                <Link href={project.github} target='_blank' rel='noopener noreferrer'  >
-                                    <TooltipProvider delayDuration={100}>
-                                        <Tooltip>
-                                            <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                                                <BsGithub className="text-3xl group-hover:text-accent" />
-                                            </TooltipTrigger>
-                                            <TooltipContent className='bg-[#E7DAF5] text-[#2A2A33] p-2 rounded-md shadow-md'>
-                                                <p>Github repository</p>
-                                            </TooltipContent>
-                                        </Tooltip>
-                                    </TooltipProvider>
-                                </Link>
+                                {project.github && (
+                                    <Link href={project.github} target='_blank' rel='noopener noreferrer'  >
+                                        <TooltipProvider delayDuration={100}>
+                                            <Tooltip>
+                                                <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
+                                                    <BsGithub className="text-3xl group-hover:text-accent" />
+                                                </TooltipTrigger>
+                                                <TooltipContent className='bg-[#E7DAF5] text-[#2A2A33] p-2 rounded-md shadow-md'>
+                                                    <p>Github repository</p>
+                                                </TooltipContent>
+                                            </Tooltip>
+                                        </TooltipProvider>
+                                    </Link>
+                                )}
                             </div>
                         </div>
                     </div>
@@ -182,7 +193,7 @@ const Work = () => {
                                                 className='object-cover'
                                                 alt={project.title}
                                                 quality={100}
-                                                sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
+                                                sizes='(max-width: 768px) 100vw, 585px'
                                             />
                                         </div>
                                     </div>

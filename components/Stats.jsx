@@ -4,20 +4,23 @@ import CountUp from 'react-countup';
 
 const stats = [
     {
-        num: 24,
-        text: 'Months of Experience',
+        num: 3,
+        suffix: '+',
+        text: 'Years of Coding',
     },
     {
-        num: 5,
-        text: 'Technologies Studied',
+        num: 3,
+        text: 'Client Websites Delivered',
     },
     {
-        num: 10,
-        text: 'Projects Built',
+        num: 54,
+        text: 'GitHub Repositories',
     },
     {
-        num: 300,
-        text: 'Commits Made',
+        num: 1200,
+        suffix: '+',
+        separator: ',',
+        text: 'Commits Pushed',
     },
 ];
 const Stats = () => {
@@ -29,6 +32,8 @@ const Stats = () => {
                         <CountUp
                             className='text-4xl xl:text-6xl font-extrabold'
                             end={item.num}
+                            suffix={item.suffix ?? ''}
+                            separator={item.separator ?? ''}
                             duration={5}
                             delay={2} />
                         <p className={`${item.text.length < 15 ? 'max-w-[100px]' : 'max-w-[150px]'

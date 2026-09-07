@@ -14,14 +14,15 @@ const Home = () => {
         <div className='flex flex-col xl:flex-row items-center xl:justify-between xl:gap-12 xl:pt-8 xl:pb-24'>
           {/* HERO INFO */}
           <div className='text-center xl:text-left flex-1 order-2 xl:order-none'>
-            <span className='capitalize text-xl'>software developer</span>
+            <span className='capitalize text-xl'>web developer &amp; designer</span>
             <h1 className='h1 mb-6'>
               Hello I&apos;m <br /> <span className='capitalize text-accent'>inga divra</span>
             </h1>
             <p className='max-w-[500px] mb-9 text-white/80'>
-              I build responsive, efficient, and visually appealing web applications
-              using modern technologies like React, Next.js, and Node.js.
-              My focus is on delivering clean, user-friendly digital solutions that enhance user experiences.
+              I design and build websites: WordPress sites for real clients, and
+              applications with React and Next.js. Typography, spacing and hierarchy
+              matter to me as much as the code underneath. Computer Science student
+              at the University of Helsinki, based in Helsinki and open to work.
             </p>
             {/* btn and socials */}
             <div className='flex flex-col xl:flex-row items-center gap-8'>

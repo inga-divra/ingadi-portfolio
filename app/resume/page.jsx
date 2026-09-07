@@ -1,8 +1,25 @@
 'use client';
 
 // External libraries
-import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaNodeJs } from 'react-icons/fa';
-import { SiTailwindcss, SiNextdotjs, SiWordpress } from 'react-icons/si';
+import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaNodeJs, FaGitAlt } from 'react-icons/fa';
+import {
+    SiTailwindcss,
+    SiNextdotjs,
+    SiWordpress,
+    SiTypescript,
+    SiElementor,
+    SiFramer,
+    SiRedux,
+    SiExpress,
+    SiGraphql,
+    SiMongodb,
+    SiPostgresql,
+    SiPrisma,
+    SiDocker,
+    SiJest,
+    SiGutenberg,
+} from 'react-icons/si';
+import { TbBrandReactNative, TbForms } from 'react-icons/tb';
 import { motion } from 'framer-motion';
 
 // Custom components
@@ -14,31 +31,35 @@ import { ScrollArea } from '@/components/ui/scroll-area';
 export const about = {
     title: 'About Me',
     description:
-        'I am a passionate developer focused on building responsive, dynamic web applications using modern JavaScript frameworks and technologies. My expertise includes WordPress development for small businesses and custom-built React applications. I have experience developing websites for various industries, including media production, wellness services, and e-commerce. My tech stack includes Next.js, React, TypeScript, and Tailwind CSS, which I use to create fast, user-friendly, and visually appealing web solutions.',
+        'I design and build websites: WordPress sites for real clients, and applications with React and Next.js. My background in media and advertising shapes how I work — typography, spacing and hierarchy are part of the build, not decoration added at the end. I have been writing code almost every day since 2022, and I am currently studying Computer Science at the University of Helsinki, which keeps the technical side growing alongside the visual one.',
     info: [
         {
             fieldName: 'Name',
             fieldValue: 'Inga Divra',
         },
         {
-            fieldName: 'Phone',
-            fieldValue: '(+358) 44 959 7074',
+            fieldName: 'Experience',
+            fieldValue: '3+ Years',
         },
         {
-            fieldName: 'Experience',
-            fieldValue: '2+ Years',
+            fieldName: 'Phone',
+            fieldValue: '(+358) 44 959 7074',
         },
         {
             fieldName: 'Email',
             fieldValue: 'inga.divra@gmail.com',
         },
         {
-            fieldName: 'Freelance',
-            fieldValue: 'Available',
+            fieldName: 'Location',
+            fieldValue: 'Helsinki, Finland',
         },
         {
             fieldName: 'Languages',
             fieldValue: 'Eng, Fin, Rus, Est',
+        },
+        {
+            fieldName: 'Status',
+            fieldValue: 'Open to work',
         },
     ],
 };
@@ -48,27 +69,27 @@ const experience = {
     icon: '/assets/resume/badge.svg',
     title: 'My Experience',
     description:
-        'I have experience in developing and customizing WordPress websites for small businesses, creating responsive and user-friendly web solutions, and building modern applications using React and Next.js.',
+        'I have built WordPress sites for real clients from the first conversation through to launch, and I design and develop interfaces with React and Next.js. Everything I have built since 2022 is documented publicly on GitHub.',
     items: [
         {
-            company: 'Oh My Cut Productions Oy',
-            role: 'Freelance WordPress Developer',
+            company: 'Oh My Cut Productions Oy, Helsinki',
+            role: 'Freelance Web Developer — WordPress',
             duration: '2025',
         },
         {
             company: 'Hemmotteluhuone Kuopio',
-            role: 'Freelance WordPress Developer',
+            role: 'Freelance Web Developer — WordPress',
             duration: '2024',
         },
         {
-            company: 'Klever Art',
-            role: 'Freelance WordPress Developer',
+            company: 'Klever Art, Espoo',
+            role: 'Freelance Web Developer — WordPress',
             duration: '2024',
         },
         {
-            company: 'Personal Portfolio',
-            role: 'React & Next.js Developer',
-            duration: '2024',
+            company: '54 repositories, 1,200+ commits',
+            role: 'Self-Directed Development',
+            duration: '2022 - Present',
         },
     ],
 };
@@ -78,12 +99,22 @@ const education = {
     icon: '/assets/resume/cap.svg',
     title: 'My Education',
     description:
-        'I have a diverse background in media, design, and IT, which has helped me transition into web development.',
+        'I am studying Computer Science at the University of Helsinki, with an earlier background in media, visual expression and advertising. Alongside the degree I take practical courses that go straight into the work I build.',
     items: [
         {
             institution: 'University of Helsinki',
-            degree: 'Computer Science',
-            duration: '2025 - 2030',
+            degree: 'Bachelor of Science in Computer Science',
+            duration: '2025 - 2028 (2nd year)',
+        },
+        {
+            institution: 'University of Helsinki',
+            degree: 'Full Stack Open — completed in full',
+            duration: '2024 - 2025',
+        },
+        {
+            institution: 'University of Helsinki',
+            degree: 'DevOps with Docker',
+            duration: '2026',
         },
         {
             institution: 'Omnia Vocational College',
@@ -95,11 +126,6 @@ const education = {
             degree: "Bachelor's Degree in Advertising and Image",
             duration: '2004 - 2008',
         },
-        {
-            institution: 'Various Online Courses',
-            degree: 'Web Development Courses',
-            duration: '2022 - Present',
-        },
     ],
 };
 
@@ -107,7 +133,7 @@ const education = {
 const skills = {
     title: 'My Skills',
     description:
-        'I am proficient in various web development technologies, focusing on building dynamic and responsive applications.',
+        'I work across the whole build: WordPress and design tools on one side, React, Next.js and Node.js on the other.',
     skillList: [
         {
             icon: <FaHtml5 />,
@@ -122,12 +148,48 @@ const skills = {
             name: 'JavaScript',
         },
         {
+            icon: <SiTypescript />,
+            name: 'TypeScript',
+        },
+        {
+            icon: <SiWordpress />,
+            name: 'WordPress',
+        },
+        {
+            icon: <SiGutenberg />,
+            name: 'Gutenberg',
+        },
+        {
+            icon: <TbForms />,
+            name: 'ACF',
+        },
+        {
+            icon: <SiElementor />,
+            name: 'Elementor',
+        },
+        {
+            icon: <FaFigma />,
+            name: 'Figma',
+        },
+        {
+            icon: <SiFramer />,
+            name: 'Framer',
+        },
+        {
             icon: <FaReact />,
             name: 'React.js',
         },
         {
             icon: <SiNextdotjs />,
             name: 'Next.js',
+        },
+        {
+            icon: <TbBrandReactNative />,
+            name: 'React Native',
+        },
+        {
+            icon: <SiRedux />,
+            name: 'Redux',
         },
         {
             icon: <SiTailwindcss />,
@@ -138,12 +200,36 @@ const skills = {
             name: 'Node.js',
         },
         {
-            icon: <SiWordpress />,
-            name: 'WordPress',
+            icon: <SiExpress />,
+            name: 'Express',
         },
         {
-            icon: <FaFigma />,
-            name: 'Figma',
+            icon: <SiGraphql />,
+            name: 'GraphQL',
+        },
+        {
+            icon: <SiMongodb />,
+            name: 'MongoDB',
+        },
+        {
+            icon: <SiPostgresql />,
+            name: 'PostgreSQL',
+        },
+        {
+            icon: <SiPrisma />,
+            name: 'Prisma',
+        },
+        {
+            icon: <SiDocker />,
+            name: 'Docker',
+        },
+        {
+            icon: <FaGitAlt />,
+            name: 'Git',
+        },
+        {
+            icon: <SiJest />,
+            name: 'Jest',
         },
     ],
 };
