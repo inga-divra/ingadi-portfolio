@@ -83,7 +83,7 @@ const projects = [
             "A custom WordPress site created for a botanical bas-relief artist. The website showcases the artist's portfolio, provides information about the artwork, and offers contact details for potential commissions. Designed with a clean, artistic layout, the site is responsive and optimized for both desktop and mobile users.",
         stack: [{ name: 'WordPress' }, { name: 'CSS' }, { name: 'HTML' }],
         image: '/assets/work/thumb5.png',
-        live: '',
+        live: 'https://klever-art.com',
         github: '',
     },
 ];
